@@ -10,6 +10,7 @@ int[] numbers = new int[10];
 int choose = 0;
 int Xpos = 0;
 int Ypos = 0;
+float colour = #CF4647;
 
 void setup () {
   numbers[0] = 0;
@@ -41,7 +42,7 @@ void setup () {
   line(0, 250, 400, 250);
   line(0, 300, 400, 300);
   line(0, 350, 400, 350);
-  fill(#CF4647);
+  fill(colour);
   noStroke();
   rect(5, 5, 40, 40);
   numbers();
@@ -53,6 +54,7 @@ void draw () {
     if (mousePressed == true) {
       x = mouseX;
       msy = mouseY;
+      colour = #3BD19A;
       if (x > 0 && x < 50) {
         column = 1;
       }
@@ -101,7 +103,7 @@ void draw () {
       find_space();
       Xpos = column * 50 - 40;
       Ypos = row * 50 + 10;
-      fill(#3BD19A);
+      fill(colour);
       noStroke();
       rect(Xpos, Ypos, 30, 30);
     }
@@ -362,4 +364,5 @@ void find_space () {
   if (row == 7 && column == 8) {
     space = 56;
   }
+  print(space);
 }
