@@ -4,9 +4,13 @@ int x = 0;
 int row = 0;
 int column = 0;
 int msy = 0;
+int space = 0;
 boolean mine = false;
 int[] numbers = new int[10];
+IntDict position;
 int choose = 0;
+int Xpos = 0;
+int Ypos = 0;
 
 void setup () {
   numbers[0] = 0;
@@ -39,8 +43,10 @@ void setup () {
   line(0, 300, 400, 300);
   line(0, 350, 400, 350);
   fill(#CF4647);
+  noStroke();
   rect(5, 5, 40, 40);
   numbers();
+  choose();
 }
 
 void draw () {
@@ -93,7 +99,12 @@ void draw () {
       if (msy > 350 && msy < 400) {
         row = 7;
       }
-      print(row, column);
+      find_space();
+      Xpos = column * 50 - 40;
+      Ypos = row * 50 + 10;
+      fill(#3BD19A);
+      noStroke();
+      rect(Xpos, Ypos, 30, 30);
     }
   }
 }
@@ -105,9 +116,6 @@ void choose () {
   }
   if (a == 1) {
     mine = false;
-  }
-  if (a != 0 && a != 1) {
-    exit();
   }
 }
 
@@ -169,12 +177,190 @@ void numbers () {
   text("47", 302, y);
   text("48", 352, y);
   y = 360;
-  text("50", 2, y);
-  text("51", 52, y);
-  text("52", 102, y);
-  text("53", 152, y);
-  text("54", 202, y);
-  text("55", 252, y);
-  text("56", 302, y);
-  text("57", 352, y);
+  text("49", 2, y);
+  text("50", 52, y);
+  text("51", 102, y);
+  text("52", 152, y);
+  text("53", 202, y);
+  text("54", 252, y);
+  text("55", 302, y);
+  text("56", 352, y);
+}
+
+void find_space () {
+  //ROW 1
+  if (row == 1 && column == 1) {
+    space = 1;
+  }
+  if (row == 1 && column == 2) {
+    space = 2;
+  }
+  if (row == 1 && column == 3) {
+    space = 3;
+  }
+  if (row == 1 && column == 4) {
+    space = 4;
+  }
+  if (row == 1 && column == 5) {
+    space = 5;
+  }
+  if (row == 1 && column == 6) {
+    space = 6;
+  }
+  if (row == 1 && column == 7) {
+    space = 7;
+  }
+  if (row == 1 && column == 8) {
+    space = 8;
+  }
+  //ROW 2
+  if (row == 2 && column == 1) {
+    space = 9;
+  }
+  if (row == 2 && column == 2) {
+    space = 10;
+  }
+  if (row == 2 && column == 3) {
+    space = 11;
+  }
+  if (row == 2 && column == 4) {
+    space = 12;
+  }
+  if (row == 2 && column == 5) {
+    space = 13;
+  }
+  if (row == 2 && column == 6) {
+    space = 14;
+  }
+  if (row == 2 && column == 7) {
+    space = 15;
+  }
+  if (row == 2 && column == 8) {
+    space = 16;
+  }
+  //ROW 3
+  if (row == 3 && column == 1) {
+    space = 17;
+  }
+  if (row == 3 && column == 2) {
+    space = 18;
+  }
+  if (row == 3 && column == 3) {
+    space = 19;
+  }
+  if (row == 3 && column == 4) {
+    space = 20;
+  }
+  if (row == 3 && column == 5) {
+    space = 21;
+  }
+  if (row == 3 && column == 6) {
+    space = 22;
+  }
+  if (row == 3 && column == 7) {
+    space = 23;
+  }
+  if (row == 3 && column == 8) {
+    space = 24;
+  }
+  // ROW 4
+  if (row == 4 && column == 1) {
+    space = 25;
+  }
+  if (row == 4 && column == 2) {
+    space = 26;
+  }
+  if (row == 4 && column == 3) {
+    space = 27;
+  }
+  if (row == 4 && column == 4) {
+    space = 28;
+  }
+  if (row == 4 && column == 5) {
+    space = 29;
+  }
+  if (row == 4 && column == 6) {
+    space = 30;
+  }
+  if (row == 4 && column == 7) {
+    space = 31;
+  }
+  if (row == 4 && column == 8) {
+    space = 32;
+  }
+  //ROW 5
+  if (row == 5 && column == 1) {
+    space = 33;
+  }
+  if (row == 5 && column == 2) {
+    space = 34;
+  }
+  if (row == 5 && column == 3) {
+    space = 35;
+  }
+  if (row == 5 && column == 4) {
+    space = 36;
+  }
+  if (row == 5 && column == 5) {
+    space = 37;
+  }
+  if (row == 5 && column == 6) {
+    space = 38;
+  }
+  if (row == 5 && column == 7) {
+    space = 39;
+  }
+  if (row == 5 && column == 8) {
+    space = 40;
+  }
+  //ROW 6
+  if (row == 6 && column == 1) {
+    space = 41;
+  }
+  if (row == 6 && column == 2) {
+    space = 42;
+  }
+  if (row == 6 && column == 3) {
+    space = 43;
+  }
+  if (row == 6 && column == 4) {
+    space = 44;
+  }
+  if (row == 6 && column == 5) {
+    space = 45;
+  }
+  if (row == 6 && column == 6) {
+    space = 46;
+  }
+  if (row == 6 && column == 7) {
+    space = 47;
+  }
+  if (row == 6 && column == 8) {
+    space = 48;
+  }
+  //ROW 7
+  if (row == 7 && column == 1) {
+    space = 49;
+  }
+  if (row == 7 && column == 2) {
+    space = 50;
+  }
+  if (row == 7 && column == 3) {
+    space = 51;
+  }
+  if (row == 7 && column == 4) {
+    space = 52;
+  }
+  if (row == 7 && column == 5) {
+    space = 53;
+  }
+  if (row == 7 && column == 6) {
+    space = 54;
+  }
+  if (row == 7 && column == 7) {
+    space = 55;
+  }
+  if (row == 7 && column == 8) {
+    space = 56;
+  }
 }
