@@ -7,7 +7,6 @@ int msy = 0;
 int space = 0;
 boolean mine = false;
 int[] numbers = new int[10];
-IntDict position;
 int choose = 0;
 int Xpos = 0;
 int Ypos = 0;
