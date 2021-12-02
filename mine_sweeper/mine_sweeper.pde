@@ -1,4 +1,5 @@
 int y = 0;
+int vic = 0;
 int x = 0;
 int row = 0;
 int column = 0;
@@ -66,16 +67,16 @@ int space_55 = 2;
 int space_56 = 2;
 
 void setup () {
-  numbers[0] = 0;
-  numbers[1] = 0;
-  numbers[2] = 1;
-  numbers[3] = 1;
-  numbers[4] = 1;
-  numbers[5] = 1;
-  numbers[6] = 1;
-  numbers[7] = 1;
-  numbers[8] = 1;
-  numbers[9] = 1;
+  numbers[0] = 1;
+  numbers[1] = 1;
+  numbers[2] = 0;
+  numbers[3] = 0;
+  numbers[4] = 0;
+  numbers[5] = 0;
+  numbers[6] = 0;
+  numbers[7] = 0;
+  numbers[8] = 0;
+  numbers[9] = 0;
   size(400, 400);
   background(255);
   cursor(CROSS);
@@ -100,6 +101,144 @@ void setup () {
   rect(5, 5, 40, 40);
   numbers();
   choose();
+}
+
+void choose () {
+  if (int(int(random(1, 5))) == 1) {
+    space_1 = 1;
+  } else {
+    space_1 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_2 = 1;
+  } else {
+    space_2 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_3 = 1;
+  } else {
+    space_3 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_4 = 1;
+  } else {
+    space_4 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_5 = 1;
+  } else {
+    space_5 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_6 = 1;
+  } else {
+    space_6 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_7 = 1;
+  } else {
+    space_7 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_8 = 1;
+  } else {
+    space_8 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_9 = 1;
+  } else {
+    space_9 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_10 = 1;
+  } else {
+    space_10 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_11 = 1;
+  } else {
+    space_11 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_12 = 1;
+  } else {
+    space_12 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_13 = 1;
+  } else {
+    space_13 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_14 = 1;
+  } else {
+    space_14 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_15 = 1;
+  } else {
+    space_15 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_16 = 1;
+  } else {
+    space_16 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_17 = 1;
+  } else {
+    space_17 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_18 = 1;
+  } else {
+    space_18 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_19 = 1;
+  } else {
+    space_19 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_20 = 1;
+  } else {
+    space_20 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_21 = 1;
+  } else {
+    space_21 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_22 = 1;
+  } else {
+    space_22 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_23 = 1;
+  } else {
+    space_23 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_24 = 1;
+  } else {
+    space_24 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_25 = 1;
+  } else {
+    space_25 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_26 = 1;
+  } else {
+    space_26 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_27 = 1;
+  } else {
+    space_27 = 0;
+  }
 }
 
 void draw () {
@@ -157,68 +296,9 @@ void draw () {
       Ypos = row * 50 + 10;
       fill(#3BD19A);
       noStroke();
-      rect(Xpos, Ypos, 30, 30);
+      //rect(Xpos, Ypos, 30, 30);
     }
   }
-}
-
-void choose () {
-  int space_1 = numbers[int(random(0, 9))];
-  int space_2 = numbers[int(random(0, 9))];
-  int space_3 = numbers[int(random(0, 9))];
-  int space_4 = numbers[int(random(0, 9))];
-  int space_5 = numbers[int(random(0, 9))];
-  int space_6 = numbers[int(random(0, 9))];
-  int space_7 = numbers[int(random(0, 9))];
-  int space_8 = numbers[int(random(0, 9))];
-  int space_9 = numbers[int(random(0, 9))];
-  int space_10 = numbers[int(random(0, 9))];
-  int space_11 = numbers[int(random(0, 9))];
-  int space_12 = numbers[int(random(0, 9))];
-  int space_13 = numbers[int(random(0, 9))];
-  int space_14 = numbers[int(random(0, 9))];
-  int space_15 = numbers[int(random(0, 9))];
-  int space_16 = numbers[int(random(0, 9))];
-  int space_17 = numbers[int(random(0, 9))];
-  int space_18 = numbers[int(random(0, 9))];
-  int space_19 = numbers[int(random(0, 9))];
-  int space_20 = numbers[int(random(0, 9))];
-  int space_21 = numbers[int(random(0, 9))];
-  int space_22 = numbers[int(random(0, 9))];
-  int space_23 = numbers[int(random(0, 9))];
-  int space_24 = numbers[int(random(0, 9))];
-  int space_25 = numbers[int(random(0, 9))];
-  int space_26 = numbers[int(random(0, 9))];
-  int space_27 = numbers[int(random(0, 9))];
-  int space_28 = numbers[int(random(0, 9))];
-  int space_29 = numbers[int(random(0, 9))];
-  int space_30 = numbers[int(random(0, 9))];
-  int space_31 = numbers[int(random(0, 9))];
-  int space_32 = numbers[int(random(0, 9))];
-  int space_33 = numbers[int(random(0, 9))];
-  int space_34 = numbers[int(random(0, 9))];
-  int space_35 = numbers[int(random(0, 9))];
-  int space_36 = numbers[int(random(0, 9))];
-  int space_37 = numbers[int(random(0, 9))];
-  int space_38 = numbers[int(random(0, 9))];
-  int space_39 = numbers[int(random(0, 9))];
-  int space_40 = numbers[int(random(0, 9))];
-  int space_41 = numbers[int(random(0, 9))];
-  int space_42 = numbers[int(random(0, 9))];
-  int space_43 = numbers[int(random(0, 9))];
-  int space_44 = numbers[int(random(0, 9))];
-  int space_45 = numbers[int(random(0, 9))];
-  int space_46 = numbers[int(random(0, 9))];
-  int space_47 = numbers[int(random(0, 9))];
-  int space_48 = numbers[int(random(0, 9))];
-  int space_49 = numbers[int(random(0, 9))];
-  int space_50 = numbers[int(random(0, 9))];
-  int space_51 = numbers[int(random(0, 9))];
-  int space_52 = numbers[int(random(0, 9))];
-  int space_53 = numbers[int(random(0, 9))];
-  int space_54 = numbers[int(random(0, 9))];
-  int space_55 = numbers[int(random(0, 9))];
-  int space_56 = numbers[int(random(0, 9))];
 }
 
 void numbers () {
@@ -465,5 +545,34 @@ void find_space () {
   if (row == 7 && column == 8) {
     space = 56;
   }
-  print(space);
+  if (space == 1) {
+    text(space_2 + space_9 + space_10, 40, 60);
+  }
+  if (space == 2) {
+    text(space_1 + space_3 + space_11 + space_10 + space_9, 90, 60);
+  }
+  if (space == 3) {
+    text(space_2 + space_4 + space_10 + space_11 + space_12, 140, 60);
+  }
+  if (space == 4) {
+    text(space_3 + space_5 + space_11 + space_12 + space_13, 190, 60);
+  }
+  if (space == 5) {
+    text(space_4 + space_6 + space_12 + space_13 + space_14, 240, 60);
+  }
+  if (space == 6) {
+    text(space_5 + space_7 + space_13 + space_14 + space_15, 290, 60);
+  }
+  if (space == 7) {
+    text(space_6 + space_8 + space_14 + space_15 + space_16, 340, 60);
+  }
+  if (space == 8) {
+    text(space_7 + space_15 + space_16, 390, 60);
+  }
+  if (space == 9) {
+    text(space_1 + space_2 + space_10 + space_17 + space_18, 40, 110);
+  }
+  if (space == 10) {
+    text(space_1 + space_2 + space_3 + space_9 + space_11 + space_17 + space_18 + space_19, 90, 110);
+  }
 }
