@@ -4,6 +4,7 @@ int x = 0;
 int row = 0;
 int column = 0;
 int msy = 0;
+boolean flag = false;
 int space = 0;
 int[] numbers = new int[10];
 int choose = 0;
@@ -238,6 +239,36 @@ void choose () {
     space_27 = 1;
   } else {
     space_27 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_28 = 1;
+  } else {
+    space_28 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_29 = 1;
+  } else {
+    space_29 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_30 = 1;
+  } else {
+    space_30 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_31 = 1;
+  } else {
+    space_31 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_32 = 1;
+  } else {
+    space_32 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_33 = 1;
+  } else {
+    space_33 = 0;
   }
 }
 
@@ -545,34 +576,64 @@ void find_space () {
   if (row == 7 && column == 8) {
     space = 56;
   }
-  if (space == 1) {
-    text(space_2 + space_9 + space_10, 40, 60);
-  }
-  if (space == 2) {
-    text(space_1 + space_3 + space_11 + space_10 + space_9, 90, 60);
-  }
-  if (space == 3) {
-    text(space_2 + space_4 + space_10 + space_11 + space_12, 140, 60);
-  }
-  if (space == 4) {
-    text(space_3 + space_5 + space_11 + space_12 + space_13, 190, 60);
-  }
-  if (space == 5) {
-    text(space_4 + space_6 + space_12 + space_13 + space_14, 240, 60);
-  }
-  if (space == 6) {
-    text(space_5 + space_7 + space_13 + space_14 + space_15, 290, 60);
-  }
-  if (space == 7) {
-    text(space_6 + space_8 + space_14 + space_15 + space_16, 340, 60);
-  }
-  if (space == 8) {
-    text(space_7 + space_15 + space_16, 390, 60);
-  }
-  if (space == 9) {
-    text(space_1 + space_2 + space_10 + space_17 + space_18, 40, 110);
-  }
-  if (space == 10) {
-    text(space_1 + space_2 + space_3 + space_9 + space_11 + space_17 + space_18 + space_19, 90, 110);
+  if (flag == false) {
+    fill(#9C9453);
+    if (space == 1) {
+      text(space_2 + space_9 + space_10, 40, 60);
+    }
+    if (space == 2) {
+      text(space_1 + space_3 + space_11 + space_10 + space_9, 90, 60);
+    }
+    if (space == 3) {
+      text(space_2 + space_4 + space_10 + space_11 + space_12, 140, 60);
+    }
+    if (space == 4) {
+      text(space_3 + space_5 + space_11 + space_12 + space_13, 190, 60);
+    }
+    if (space == 5) {
+      text(space_4 + space_6 + space_12 + space_13 + space_14, 240, 60);
+    }
+    if (space == 6) {
+      text(space_5 + space_7 + space_13 + space_14 + space_15, 290, 60);
+    }
+    if (space == 7) {
+      text(space_6 + space_8 + space_14 + space_15 + space_16, 340, 60);
+    }
+    if (space == 8) {
+      text(space_7 + space_15 + space_16, 390, 60);
+    }
+    if (space == 9) {
+      text(space_1 + space_2 + space_10 + space_17 + space_18, 40, 110);
+    }
+    if (space == 10) {
+      text(space_1 + space_2 + space_3 + space_9 + space_11 + space_17 + space_18 + space_19, 90, 110);
+    }
+    if (space == 11) {
+      text(space_2 + space_3 + space_4 + space_12 + space_10 + space_18 + space_19 + space_20, 140, 110);
+    }
+    if (space == 12) {
+      text(space_3 + space_4 + space_5 + space_11 + space_13 + space_19 + space_20 + space_21, 190, 110);
+    }
+    if (space == 13) {
+      text(space_4+space_5+space_6+space_12+space_14+space_20+space_21+space_22, 240, 110);
+    }
+    if (space == 14) {
+      text(space_5+space_6+space_7+space_13+space_15+space_21+space_22+space_23, 290, 110);
+    }
+    if (space == 15) {
+      text(space_6+space_7+space_8+space_14+space_16+space_22+space_23+space_24, 340, 110);
+    }
+    if (space == 16) {
+      text(space_7+space_8+space_15+space_23+space_24, 390, 110);
+    }
+    if (space == 17) {
+      text(space_9+space_10+space_18+space_25+space_26, 40, 160);
+    }
+    if (space == 18) {
+      text(space_9+space_10+space_11+space_17+space_19+space_25+space_26+space_27, 90, 160);
+    }
+    if (space == 19) {
+      text(space_10+space_11+space_12+space_18+space_20+space_26+space_27+space_28, 140, 110);
+    }
   }
 }
