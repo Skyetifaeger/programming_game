@@ -1,21 +1,74 @@
 int y = 0;
-int a = 2;
 int x = 0;
 int row = 0;
 int column = 0;
 int msy = 0;
 int space = 0;
-boolean mine = false;
 int[] numbers = new int[10];
 int choose = 0;
 int Xpos = 0;
 int Ypos = 0;
-float colour = #CF4647;
+int space_1 = 2;
+int space_2 = 2;
+int space_3 = 2;
+int space_4 = 2;
+int space_5 = 2;
+int space_6 = 2;
+int space_7 = 2;
+int space_8 = 2;
+int space_9 = 2;
+int space_10 = 2;
+int space_11 = 2;
+int space_12 = 2;
+int space_13 = 2;
+int space_14 = 2;
+int space_15 = 2;
+int space_16 = 2;
+int space_17 = 2;
+int space_18 = 2;
+int space_19 = 2;
+int space_20 = 2;
+int space_21 = 2;
+int space_22 = 2;
+int space_23 = 2;
+int space_24 = 2;
+int space_25 = 2;
+int space_26 = 2;
+int space_27 = 2;
+int space_28 = 2;
+int space_29 = 2;
+int space_30 = 2;
+int space_31 = 2;
+int space_32 = 2;
+int space_33 = 2;
+int space_34 = 2;
+int space_35 = 2;
+int space_36 = 2;
+int space_37 = 2;
+int space_38 = 2;
+int space_39 = 2;
+int space_40 = 2;
+int space_41 = 2;
+int space_42 = 2;
+int space_43 = 2;
+int space_44 = 2;
+int space_45 = 2;
+int space_46 = 2;
+int space_47 = 2;
+int space_48 = 2;
+int space_49 = 2;
+int space_50 = 2;
+int space_51 = 2;
+int space_52 = 2;
+int space_53 = 2;
+int space_54 = 2;
+int space_55 = 2;
+int space_56 = 2;
 
 void setup () {
   numbers[0] = 0;
   numbers[1] = 0;
-  numbers[2] = 0;
+  numbers[2] = 1;
   numbers[3] = 1;
   numbers[4] = 1;
   numbers[5] = 1;
@@ -42,7 +95,7 @@ void setup () {
   line(0, 250, 400, 250);
   line(0, 300, 400, 300);
   line(0, 350, 400, 350);
-  fill(colour);
+  fill(#CF4647);
   noStroke();
   rect(5, 5, 40, 40);
   numbers();
@@ -54,7 +107,6 @@ void draw () {
     if (mousePressed == true) {
       x = mouseX;
       msy = mouseY;
-      colour = #3BD19A;
       if (x > 0 && x < 50) {
         column = 1;
       }
@@ -103,7 +155,7 @@ void draw () {
       find_space();
       Xpos = column * 50 - 40;
       Ypos = row * 50 + 10;
-      fill(colour);
+      fill(#3BD19A);
       noStroke();
       rect(Xpos, Ypos, 30, 30);
     }
@@ -111,13 +163,62 @@ void draw () {
 }
 
 void choose () {
-  a = numbers[int(random(0, 9))];
-  if (a == 0) {
-    mine = true;
-  }
-  if (a == 1) {
-    mine = false;
-  }
+  int space_1 = numbers[int(random(0, 9))];
+  int space_2 = numbers[int(random(0, 9))];
+  int space_3 = numbers[int(random(0, 9))];
+  int space_4 = numbers[int(random(0, 9))];
+  int space_5 = numbers[int(random(0, 9))];
+  int space_6 = numbers[int(random(0, 9))];
+  int space_7 = numbers[int(random(0, 9))];
+  int space_8 = numbers[int(random(0, 9))];
+  int space_9 = numbers[int(random(0, 9))];
+  int space_10 = numbers[int(random(0, 9))];
+  int space_11 = numbers[int(random(0, 9))];
+  int space_12 = numbers[int(random(0, 9))];
+  int space_13 = numbers[int(random(0, 9))];
+  int space_14 = numbers[int(random(0, 9))];
+  int space_15 = numbers[int(random(0, 9))];
+  int space_16 = numbers[int(random(0, 9))];
+  int space_17 = numbers[int(random(0, 9))];
+  int space_18 = numbers[int(random(0, 9))];
+  int space_19 = numbers[int(random(0, 9))];
+  int space_20 = numbers[int(random(0, 9))];
+  int space_21 = numbers[int(random(0, 9))];
+  int space_22 = numbers[int(random(0, 9))];
+  int space_23 = numbers[int(random(0, 9))];
+  int space_24 = numbers[int(random(0, 9))];
+  int space_25 = numbers[int(random(0, 9))];
+  int space_26 = numbers[int(random(0, 9))];
+  int space_27 = numbers[int(random(0, 9))];
+  int space_28 = numbers[int(random(0, 9))];
+  int space_29 = numbers[int(random(0, 9))];
+  int space_30 = numbers[int(random(0, 9))];
+  int space_31 = numbers[int(random(0, 9))];
+  int space_32 = numbers[int(random(0, 9))];
+  int space_33 = numbers[int(random(0, 9))];
+  int space_34 = numbers[int(random(0, 9))];
+  int space_35 = numbers[int(random(0, 9))];
+  int space_36 = numbers[int(random(0, 9))];
+  int space_37 = numbers[int(random(0, 9))];
+  int space_38 = numbers[int(random(0, 9))];
+  int space_39 = numbers[int(random(0, 9))];
+  int space_40 = numbers[int(random(0, 9))];
+  int space_41 = numbers[int(random(0, 9))];
+  int space_42 = numbers[int(random(0, 9))];
+  int space_43 = numbers[int(random(0, 9))];
+  int space_44 = numbers[int(random(0, 9))];
+  int space_45 = numbers[int(random(0, 9))];
+  int space_46 = numbers[int(random(0, 9))];
+  int space_47 = numbers[int(random(0, 9))];
+  int space_48 = numbers[int(random(0, 9))];
+  int space_49 = numbers[int(random(0, 9))];
+  int space_50 = numbers[int(random(0, 9))];
+  int space_51 = numbers[int(random(0, 9))];
+  int space_52 = numbers[int(random(0, 9))];
+  int space_53 = numbers[int(random(0, 9))];
+  int space_54 = numbers[int(random(0, 9))];
+  int space_55 = numbers[int(random(0, 9))];
+  int space_56 = numbers[int(random(0, 9))];
 }
 
 void numbers () {
