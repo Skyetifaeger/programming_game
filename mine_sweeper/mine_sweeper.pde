@@ -270,6 +270,126 @@ void choose () {
   } else {
     space_33 = 0;
   }
+  if (int(random(1, 5)) == 1) {
+    space_34 = 1;
+  } else {
+    space_34 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_35 = 1;
+  } else {
+    space_35 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_36 = 1;
+  } else {
+    space_36 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_37 = 1;
+  } else {
+    space_37 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_38 = 1;
+  } else {
+    space_38 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_39 = 1;
+  } else {
+    space_39 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_40 = 1;
+  } else {
+    space_40 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_40 = 1;
+  } else {
+    space_40 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_41 = 1;
+  } else {
+    space_41 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_42 = 1;
+  } else {
+    space_42 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_43 = 1;
+  } else {
+    space_43 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_44 = 1;
+  } else {
+    space_44 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_45 = 1;
+  } else {
+    space_45 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_46 = 1;
+  } else {
+    space_46 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_47 = 1;
+  } else {
+    space_47 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_48 = 1;
+  } else {
+    space_48 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_49 = 1;
+  } else {
+    space_49 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_50 = 1;
+  } else {
+    space_50 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_51 = 1;
+  } else {
+    space_51 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_52 = 1;
+  } else {
+    space_52 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_53 = 1;
+  } else {
+    space_53 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_54 = 1;
+  } else {
+    space_54 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_55 = 1;
+  } else {
+    space_55 = 0;
+  }
+  if (int(random(1, 5)) == 1) {
+    space_56 = 1;
+  } else {
+    space_56 = 0;
+  }
 }
 
 void draw () {
@@ -576,6 +696,7 @@ void find_space () {
   if (row == 7 && column == 8) {
     space = 56;
   }
+  
   if (flag == false) {
     fill(#9C9453);
     if (space == 1) {
@@ -633,7 +754,16 @@ void find_space () {
       text(space_9+space_10+space_11+space_17+space_19+space_25+space_26+space_27, 90, 160);
     }
     if (space == 19) {
-      text(space_10+space_11+space_12+space_18+space_20+space_26+space_27+space_28, 140, 110);
+      text(space_10+space_11+space_12+space_18+space_20+space_26+space_27+space_28, 140, 160);
+    }
+    if (space == 20) {
+      text(space_11+space_12+space_13+space_19+space_21+space_27+space_28+space_29, 190, 160);
+    }
+    if (space == 21) {
+      text(space_12+space_13+space_14+space_20+space_22+space_28+space_29+space_30, 240, 160);
+    }
+    if (space == 22) {
+      text(space_13+space_14+space_15+space_21+space_23+space_29+space_30+31, 290, 160);
     }
   }
 }
