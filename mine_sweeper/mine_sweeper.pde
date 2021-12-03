@@ -763,7 +763,16 @@ void find_space () {
       text(space_12+space_13+space_14+space_20+space_22+space_28+space_29+space_30, 240, 160);
     }
     if (space == 22) {
-      text(space_13+space_14+space_15+space_21+space_23+space_29+space_30+31, 290, 160);
+      text(space_13+space_14+space_15+space_21+space_23+space_29+space_30+space_31, 290, 160);
+    }
+    if (space == 23) {
+      text(space_14+space_15+space_16+space_22+space_24+space_30+space_31+space_32, 340, 160);
+    }
+    if (space == 24) {
+      text(space_15+space_16+space_23+space_31+space_32, 390, 160);
+    }
+    if (space == 25) {
+      text(space_17+space_18+space_26+space_33+space_34, 40, 210);
     }
   }
 }
