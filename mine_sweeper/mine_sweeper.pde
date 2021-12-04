@@ -524,6 +524,9 @@ void find_space () {
   //ROW 1
   if (row == 1 && column == 1) {
     space = 1;
+    if (space_1 == 1) {
+      background(#F70000);
+    }
   }
   if (row == 1 && column == 2) {
     space = 2;
@@ -773,6 +776,12 @@ void find_space () {
     }
     if (space == 25) {
       text(space_17+space_18+space_26+space_33+space_34, 40, 210);
+    }
+    if (space == 26) {
+      text(space_17+space_18+space_19+space_25+space_27+space_33+space_34+space_35, 90, 210);
+    }
+    if (space == 27) {
+      text(space_18+space_19+sapce_20+space_26
     }
   }
 }
