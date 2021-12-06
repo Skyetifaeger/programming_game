@@ -1,10 +1,9 @@
 int y = 0;
-int vic = 0;
 int x = 0;
 int row = 0;
 int column = 0;
 int msy = 0;
-boolean flag = false;
+boolean near = true;
 int space = 0;
 int choose = 0;
 int Xpos = 0;
@@ -432,11 +431,10 @@ void draw () {
         row = 7;
       }
       find_space();
-      Xpos = column * 50 - 40;
-      Ypos = row * 50 + 10;
+      Xpos = column * 50 - 25;
+      Ypos = row * 50 + 25;
       fill(#3BD19A);
       noStroke();
-      //rect(Xpos, Ypos, 30, 30);
     }
   }
 }
@@ -510,186 +508,519 @@ void numbers () {
 }
 
 void find_space () {
-  //ROW 1
+  // ROW 1 ---------------------------------------------------------------------------------------
   if (row == 1 && column == 1) {
     space = 1;
+    near = true;
     if (space_1 == 1) {
-      background(#F70000);
+      near = false;
+      fill(0);
+      ellipse(25, 75, 30, 30);
     }
   }
   if (row == 1 && column == 2) {
     space = 2;
+    near = true;
+    if (space_2 == 1) {
+      near = false;
+      fill(0);
+      ellipse(75, 75, 30, 30);
+    }
   }
   if (row == 1 && column == 3) {
     space = 3;
+    near = true;
+    if (space_3 == 1) {
+      near = false;
+      fill(0);
+      ellipse(125, 75, 30, 30);
+    }
   }
   if (row == 1 && column == 4) {
     space = 4;
+    near = true;
+    if (space_4 == 1) {
+      near = false;
+      fill(0);
+      ellipse(175, 75, 30, 30);
+    }
   }
   if (row == 1 && column == 5) {
     space = 5;
+    near = true;
+    if (space_5 == 1) {
+      near = false;
+      fill(0);
+      ellipse(225, 75, 30, 30);
+    }
   }
   if (row == 1 && column == 6) {
     space = 6;
+    near = true;
+    if (space_6 == 1) {
+      near = false;
+      fill(0);
+      ellipse(275, 75, 30, 30);
+    }
   }
   if (row == 1 && column == 7) {
     space = 7;
+    near = true;
+    if (space_7 == 1) {
+      near = false;
+      fill(0);
+      ellipse(325, 75, 30, 30);
+    }
   }
   if (row == 1 && column == 8) {
     space = 8;
+    near = true;
+    if (space_8 == 1) {
+      near = false;
+      fill(0);
+      ellipse(375, 75, 30, 30);
+    }
   }
-  //ROW 2
+  // ROW 2 ---------------------------------------------------------------------------------------
   if (row == 2 && column == 1) {
     space = 9;
+    near = true;
+    if (space_9 == 1) {
+      near = false;
+      fill(0);
+      ellipse(25, 125, 30, 30);
+    }
   }
   if (row == 2 && column == 2) {
     space = 10;
+    near = true;
+    if (space_10 == 1) {
+      near = false;
+      fill(0);
+      ellipse(75, 125, 30, 30);
+    }
   }
   if (row == 2 && column == 3) {
     space = 11;
+    near = true;
+    if (space_11 == 1) {
+      near = false;
+      fill(0);
+      ellipse(125, 125, 30, 30);
+    }
   }
   if (row == 2 && column == 4) {
     space = 12;
+    near = true;
+    if (space_12 == 1) {
+      near = false;
+      fill(0);
+      ellipse(175, 125, 30, 30);
+    }
   }
   if (row == 2 && column == 5) {
     space = 13;
+    near = true;
+    if (space_13 == 1) {
+      near = false;
+      fill(0);
+      ellipse(225, 125, 30, 30);
+    }
   }
   if (row == 2 && column == 6) {
     space = 14;
+    near = true;
+    if (space_14 == 1) {
+      near = false;
+      fill(0);
+      ellipse(275, 125, 30, 30);
+    }
   }
   if (row == 2 && column == 7) {
     space = 15;
+    near = true;
+    if (space_15 == 1) {
+      near = false;
+      fill(0);
+      ellipse(325, 125, 30, 30);
+    }
   }
   if (row == 2 && column == 8) {
     space = 16;
+    near = true;
+    if (space_16 == 1) {
+      near = false;
+      fill(0);
+      ellipse(375, 125, 30, 30);
+    }
   }
-  //ROW 3
+  // ROW 3 ---------------------------------------------------------------------------------------
   if (row == 3 && column == 1) {
     space = 17;
+    near = true;
+    if (space_17 == 1) {
+      near = false;
+      fill(0);
+      ellipse(25, 175, 30, 30);
+    }
   }
   if (row == 3 && column == 2) {
     space = 18;
+    near = true;
+    if (space_18 == 1) {
+      near = false;
+      fill(0);
+      ellipse(75, 175, 30, 30);
+    }
   }
   if (row == 3 && column == 3) {
     space = 19;
+    near = true;
+    if (space_19 == 1) {
+      near = false;
+      fill(0);
+      ellipse(125, 175, 30, 30);
+    }
   }
   if (row == 3 && column == 4) {
     space = 20;
+    near = true;
+    if (space_20 == 1) {
+      near = false;
+      fill(0);
+      ellipse(175, 175, 30, 30);
+    }
   }
   if (row == 3 && column == 5) {
     space = 21;
+    near = true;
+    if (space_21 == 1) {
+      near = false;
+      fill(0);
+      ellipse(225, 175, 30, 30);
+    }
   }
   if (row == 3 && column == 6) {
     space = 22;
+    near = true;
+    if (space_22 == 1) {
+      near = false;
+      fill(0);
+      ellipse(275, 175, 30, 30);
+    }
   }
   if (row == 3 && column == 7) {
     space = 23;
+    near = true;
+    if (space_23 == 1) {
+      near = false;
+      fill(0);
+      ellipse(325, 175, 30, 30);
+    }
   }
   if (row == 3 && column == 8) {
     space = 24;
+    near = true;
+    if (space_24 == 1) {
+      near = false;
+      fill(0);
+      ellipse(375, 175, 30, 30);
+    }
   }
-  // ROW 4
+  // ROW 4 ---------------------------------------------------------------------------------------
   if (row == 4 && column == 1) {
     space = 25;
+    near = true;
+    if (space_25 == 1) {
+      near = false;
+      fill(0);
+      ellipse(25, 225, 30, 30);
+    }
   }
   if (row == 4 && column == 2) {
     space = 26;
+    near = true;
+    if (space_26 == 1) {
+      near = false;
+      fill(0);
+      ellipse(75, 225, 30, 30);
+    }
   }
   if (row == 4 && column == 3) {
     space = 27;
+    near = true;
+    if (space_27 == 1) {
+      near = false;
+      fill(0);
+      ellipse(125, 225, 30, 30);
+    }
   }
   if (row == 4 && column == 4) {
     space = 28;
+    near = true;
+    if (space_28 == 1) {
+      near = false;
+      fill(0);
+      ellipse(175, 225, 30, 30);
+    }
   }
   if (row == 4 && column == 5) {
     space = 29;
+    near = true;
+    if (space_29 == 1) {
+      near = false;
+      fill(0);
+      ellipse(225, 225, 30, 30);
+    }
   }
   if (row == 4 && column == 6) {
     space = 30;
+    near = true;
+    if (space_30 == 1) {
+      near = false;
+      fill(0);
+      ellipse(275, 225, 30, 30);
+    }
   }
   if (row == 4 && column == 7) {
     space = 31;
+    near = true;
+    if (space_31 == 1) {
+      near = false;
+      fill(0);
+      ellipse(325, 225, 30, 30);
+    }
   }
   if (row == 4 && column == 8) {
     space = 32;
+    near = true;
+    if (space_32 == 1) {
+      near = false;
+      fill(0);
+      ellipse(375, 225, 30, 30);
+    }
   }
-  //ROW 5
+  // ROW 5 ---------------------------------------------------------------------------------------
   if (row == 5 && column == 1) {
     space = 33;
+    near = true;
+    if (space_33 == 1) {
+      near = false;
+      fill(0);
+      ellipse(25, 275, 30, 30);
+    }
   }
   if (row == 5 && column == 2) {
     space = 34;
+    near = true;
+    if (space_34 == 1) {
+      near = false;
+      fill(0);
+      ellipse(75, 275, 30, 30);
+    }
   }
   if (row == 5 && column == 3) {
     space = 35;
+    near = true;
+    if (space_35 == 1) {
+      near = false;
+      fill(0);
+      ellipse(125, 275, 30, 30);
+    }
   }
   if (row == 5 && column == 4) {
     space = 36;
+    near = true;
+    if (space_36 == 1) {
+      near = false;
+      fill(0);
+      ellipse(175, 275, 30, 30);
+    }
   }
   if (row == 5 && column == 5) {
     space = 37;
+    near = true;
+    if (space_37 == 1) {
+      near = false;
+      fill(0);
+      ellipse(225, 275, 30, 30);
+    }
   }
   if (row == 5 && column == 6) {
     space = 38;
+    near = true;
+    if (space_38 == 1) {
+      near = false;
+      fill(0);
+      ellipse(275, 275, 30, 30);
+    }
   }
   if (row == 5 && column == 7) {
     space = 39;
+    near = true;
+    if (space_39 == 1) {
+      near = false;
+      fill(0);
+      ellipse(325, 275, 30, 30);
+    }
   }
   if (row == 5 && column == 8) {
     space = 40;
+    near = true;
+    if (space_40 == 1) {
+      near = false;
+      fill(0);
+      ellipse(375, 275, 30, 30);
+    }
   }
-  //ROW 6
+  // ROW 6 ---------------------------------------------------------------------------------------
   if (row == 6 && column == 1) {
     space = 41;
+    near = true;
+    if (space_41 == 1) {
+      near = false;
+      fill(0);
+      ellipse(25, 325, 30, 30);
+    }
   }
   if (row == 6 && column == 2) {
     space = 42;
+    near = true;
+    if (space_42 == 1) {
+      near = false;
+      fill(0);
+      ellipse(75, 325, 30, 30);
+    }
   }
   if (row == 6 && column == 3) {
     space = 43;
+    near = true;
+    if (space_43 == 1) {
+      near = false;
+      fill(0);
+      ellipse(125, 325, 30, 30);
+    }
   }
   if (row == 6 && column == 4) {
     space = 44;
+    near = true;
+    if (space_44 == 1) {
+      near = false;
+      fill(0);
+      ellipse(175, 325, 30, 30);
+    }
   }
   if (row == 6 && column == 5) {
     space = 45;
+    near = true;
+    if (space_45 == 1) {
+      near = false;
+      fill(0);
+      ellipse(225, 325, 30, 30);
+    }
   }
   if (row == 6 && column == 6) {
     space = 46;
+    near = true;
+    if (space_46 == 1) {
+      near = false;
+      fill(0);
+      ellipse(275, 325, 30, 30);
+    }
   }
   if (row == 6 && column == 7) {
     space = 47;
+    near = true;
+    if (space_47 == 1) {
+      near = false;
+      fill(0);
+      ellipse(325, 325, 30, 30);
+    }
   }
   if (row == 6 && column == 8) {
     space = 48;
+    near = true;
+    if (space_48 == 1) {
+      near = false;
+      fill(0);
+      ellipse(375, 325, 30, 30);
+    }
   }
-  //ROW 7
+  // ROW 7 ---------------------------------------------------------------------------------------
   if (row == 7 && column == 1) {
     space = 49;
+    near = true;
+    if (space_49 == 1) {
+      near = false;
+      fill(0);
+      ellipse(25, 375, 30, 30);
+    }
   }
   if (row == 7 && column == 2) {
     space = 50;
+    near = true;
+    if (space_50 == 1) {
+      near = false;
+      fill(0);
+      ellipse(75, 375, 30, 30);
+    }
   }
   if (row == 7 && column == 3) {
     space = 51;
+    near = true;
+    if (space_51 == 1) {
+      near = false;
+      fill(0);
+      ellipse(125, 375, 30, 30);
+    }
   }
   if (row == 7 && column == 4) {
     space = 52;
+    near = true;
+    if (space_52 == 1) {
+      near = false;
+      fill(0);
+      ellipse(175, 375, 30, 30);
+    }
   }
   if (row == 7 && column == 5) {
     space = 53;
+    near = true;
+    if (space_53 == 1) {
+      near = false;
+      fill(0);
+      ellipse(225, 375, 30, 30);
+    }
   }
   if (row == 7 && column == 6) {
     space = 54;
+    near = true;
+    if (space_54 == 1) {
+      near = false;
+      fill(0);
+      ellipse(275, 375, 30, 30);
+    }
   }
   if (row == 7 && column == 7) {
     space = 55;
+    near = true;
+    if (space_55 == 1) {
+      near = false;
+      fill(0);
+      ellipse(325, 375, 30, 30);
+    }
   }
   if (row == 7 && column == 8) {
     space = 56;
+    near = true;
+    if (space_56 == 1) {
+      near = false;
+      fill(0);
+      ellipse(375, 375, 30, 30);
+    }
   }
 
-  if (flag == false) {
+  if (near == true) {
     fill(#9C9453);
     if (space == 1) {
       text(space_2 + space_9 + space_10, 40, 60);
@@ -816,6 +1147,48 @@ void find_space () {
     }
     if (space == 42) {
       text(space_33+space_34+space_35+space_41+space_43+space_49+space_50+space_51, 90, 310);
+    }
+    if (space == 43) {
+      text(space_34+space_35+space_36+space_42+space_44+space_50+space_51+space_52, 140, 310);
+    }
+    if (space == 44) {
+      text(space_35+space_36+space_37+space_43+space_45+space_51+space_52+space_53, 190, 310);
+    }
+    if (space == 45) {
+      text(space_36+space_37+space_38+space_44+space_46+space_52+space_53+space_54, 240, 310);
+    }
+    if (space == 46) {
+      text(space_37+space_38+space_39+space_45+space_47+space_53+space_54+space_55, 290, 310);
+    }
+    if (space == 47) {
+      text(space_38+space_39+space_40+space_46+space_48+space_54+space_55+space_56, 340, 310);
+    }
+    if (space == 48) {
+      text(space_39+space_40+space_47+space_55+space_56, 390, 310);
+    }
+    if (space == 49) {
+      text(space_41+space_42+space_50, 40, 360);
+    }
+    if (space == 50) {
+      text(space_41+space_42+space_43+space_49+space_51, 90, 360);
+    }
+    if (space == 51) {
+      text(space_42+space_43+space_44+space_50+space_52, 140, 360);
+    }
+    if (space == 52) {
+      text(space_43+space_44+space_45+space_51+space_53, 190, 360);
+    }
+    if (space == 53) {
+      text(space_44+space_45+space_46+space_52+space_54, 240, 360);
+    }
+    if (space == 54) {
+      text(space_45+space_46+space_47+space_53+space_55, 290, 360);
+    }
+    if (space == 55) {
+      text(space_46+space_47+space_48+space_54+space_56, 340, 360);
+    }
+    if (space == 56) {
+      text(space_47+space_48+space_55, 390, 360);
     }
   }
 }
