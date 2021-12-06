@@ -6,8 +6,6 @@ int msy = 0;
 boolean near = true;
 int space = 0;
 int choose = 0;
-int Xpos = 0;
-int Ypos = 0;
 int space_1 = 2;
 int space_2 = 2;
 int space_3 = 2;
@@ -431,10 +429,6 @@ void draw () {
         row = 7;
       }
       find_space();
-      Xpos = column * 50 - 25;
-      Ypos = row * 50 + 25;
-      fill(#3BD19A);
-      noStroke();
     }
   }
 }
