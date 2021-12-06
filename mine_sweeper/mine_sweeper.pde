@@ -6,7 +6,6 @@ int column = 0;
 int msy = 0;
 boolean flag = false;
 int space = 0;
-int[] numbers = new int[10];
 int choose = 0;
 int Xpos = 0;
 int Ypos = 0;
@@ -68,16 +67,6 @@ int space_55 = 2;
 int space_56 = 2;
 
 void setup () {
-  numbers[0] = 1;
-  numbers[1] = 1;
-  numbers[2] = 0;
-  numbers[3] = 0;
-  numbers[4] = 0;
-  numbers[5] = 0;
-  numbers[6] = 0;
-  numbers[7] = 0;
-  numbers[8] = 0;
-  numbers[9] = 0;
   size(400, 400);
   background(255);
   cursor(CROSS);
@@ -699,7 +688,7 @@ void find_space () {
   if (row == 7 && column == 8) {
     space = 56;
   }
-  
+
   if (flag == false) {
     fill(#9C9453);
     if (space == 1) {
@@ -776,6 +765,57 @@ void find_space () {
     }
     if (space == 25) {
       text(space_17+space_18+space_26+space_33+space_34, 40, 210);
+    }
+    if (space == 26) {
+      text(space_17+space_18+space_19+space_25+space_27+space_33+space_34+space_35, 90, 210);
+    }
+    if (space == 27) {
+      text(space_18+space_19+space_20+space_26+space_28+space_34+space_35+space_36, 140, 210);
+    }
+    if (space == 28) {
+      text(space_19+space_20+space_21+space_27+space_29+space_35+space_36+space_37, 190, 210);
+    }
+    if (space == 29) {
+      text(space_20+space_21+space_22+space_28+space_30+space_36+space_37+space_38, 240, 210);
+    }
+    if (space == 30) {
+      text(space_21+space_22+space_23+space_29+space_31+space_37+space_38+space_39, 290, 210);
+    }
+    if (space == 31) {
+      text(space_22+space_23+space_24+space_30+space_32+space_38+space_39+space_40, 340, 210);
+    }
+    if (space == 32) {
+      text(space_23+space_24+space_31+space_39+space_40, 390, 210);
+    }
+    if (space == 33) {
+      text(space_25+space_26+space_34+space_41+space_42, 40, 260);
+    }
+    if (space == 34) {
+      text(space_25+space_26+space_27+space_33+space_35+space_41+space_42+space_43, 90, 260);
+    }
+    if (space == 35) {
+      text(space_26+space_27+space_28+space_34+space_36+space_42+space_43+space_44, 140, 260);
+    }
+    if (space == 36) {
+      text(space_27+space_28+space_29+space_35+space_37+space_43+space_44+space_45, 190, 260);
+    }
+    if (space == 37) {
+      text(space_28+space_29+space_30+space_36+space_38+space_44+space_45+space_46, 240, 260);
+    }
+    if (space == 38) {
+      text(space_29+space_30+space_31+space_37+space_39+space_45+space_46+space_47, 290, 260);
+    }
+    if (space == 39) {
+      text(space_30+space_31+space_32+space_38+space_40+space_46+space_47+space_48, 340, 260);
+    }
+    if (space == 40) {
+      text(space_31+space_32+space_39+space_47+space_48, 390, 260);
+    }
+    if (space == 41) {
+      text(space_33+space_34+space_42+space_49+space_50, 40, 310);
+    }
+    if (space == 42) {
+      text(space_33+space_34+space_35+space_41+space_43+space_49+space_50+space_51, 90, 310);
     }
   }
 }
