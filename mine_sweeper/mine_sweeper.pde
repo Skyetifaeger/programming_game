@@ -1,4 +1,5 @@
 int y = 0;
+color r = 0;
 int x = 0;
 int row = 0;
 int column = 0;
@@ -432,8 +433,10 @@ void draw () {
         row = 7;
       }
       find_space();
+      row = 0;
+      column = 0;
       if (mouseX <= 45 && mouseX >= 5 && mouseY >= 5 && mouseY <= 45) {
-        delay(50);
+        delay(70);
         if (flag_mode == true) {
           stroke(255);
           fill(#CF4647);
@@ -522,12 +525,14 @@ void numbers () {
 }
 
 void find_space () {
+  mouseMoved();
   if (flag_mode == true) {
-    Ypos = column * 50 - 40;
-    Xpos = row * 50 + 40;
-    rect(row*50+40, Ypos, 40, 40);
+    Xpos = column*50 - 40;
+    Ypos = row*50 + 10;
+    noStroke();
+    rect(Xpos, Ypos, 30, 30);
   }
-  if (flag_mode == false) {
+  if (flag_mode == false && r != 207) {
     // ROW 1 ---------------------------------------------------------------------------------------
     if (row == 1 && column == 1) {
       space = 1;
@@ -1095,6 +1100,8 @@ void find_space () {
         exit();
       }
     }
+    row =0;
+    column = 0;
   }
 
   if (near == true) {
@@ -1268,4 +1275,11 @@ void find_space () {
       text(space_47+space_48+space_55, 390, 360);
     }
   }
+}
+
+void mouseMoved() {
+  color c = get(mouseX, mouseY);
+
+  color r = c >> 020 & 0xFF;
+  println( "\tR: " + r);
 }
