@@ -66,11 +66,13 @@ int space_53 = 2;
 int space_54 = 2;
 int space_55 = 2;
 int space_56 = 2;
+int dificulty = 0;
 
 void setup () {
   size(400, 400);
   background(255);
   cursor(CROSS);
+  fill(0);
   stroke(0);
   line(50, 50, 50, 400);
   line(100, 50, 100, 400);
@@ -92,6 +94,9 @@ void setup () {
   rect(5, 5, 40, 40);
   numbers();
   choose();
+  textSize(20);
+  fill(255,10,10);
+  text("You can select squares through flags", 70, 25);
 }
 
 void choose () {
@@ -1287,11 +1292,11 @@ void find_space () {
 
 
 
- /////////FROM GoToLoop from the processing forum////////////
+/////////FROM GoToLoop from the processing forum////////////
 void mouseMoved() {
   color c = get(mouseX, mouseY);
 
   color r = c >> 020 & 0xFF;
   println( "\tR: " + r);
 }
- ///ISSUE :[pixel??] colour recognition of mouse position////
+///ISSUE :[pixel??] colour recognition of mouse position////
