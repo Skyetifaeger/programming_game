@@ -1106,180 +1106,192 @@ void find_space () {
 
   if (near == true) {
     fill(#9C9453);
+    textSize(30);
+    //////////////////////////////////////////////////////////////////// ROW 1
     if (space == 1) {
-      text(space_2 + space_9 + space_10, 40, 60);
+      text(space_2 + space_9 + space_10, 20, 80);
     }
     if (space == 2) {
-      text(space_1 + space_3 + space_11 + space_10 + space_9, 90, 60);
+      text(space_1 + space_3 + space_11 + space_10 + space_9, 70, 80);
     }
     if (space == 3) {
-      text(space_2 + space_4 + space_10 + space_11 + space_12, 140, 60);
+      text(space_2 + space_4 + space_10 + space_11 + space_12, 120, 80);
     }
     if (space == 4) {
-      text(space_3 + space_5 + space_11 + space_12 + space_13, 190, 60);
+      text(space_3 + space_5 + space_11 + space_12 + space_13, 170, 80);
     }
     if (space == 5) {
-      text(space_4 + space_6 + space_12 + space_13 + space_14, 240, 60);
+      text(space_4 + space_6 + space_12 + space_13 + space_14, 220, 80);
     }
     if (space == 6) {
-      text(space_5 + space_7 + space_13 + space_14 + space_15, 290, 60);
+      text(space_5 + space_7 + space_13 + space_14 + space_15, 270, 80);
     }
     if (space == 7) {
-      text(space_6 + space_8 + space_14 + space_15 + space_16, 340, 60);
+      text(space_6 + space_8 + space_14 + space_15 + space_16, 320, 80);
     }
     if (space == 8) {
-      text(space_7 + space_15 + space_16, 390, 60);
+      text(space_7 + space_15 + space_16, 370, 80);
     }
+    //////////////////////////////////////////////////////////////////// ROW 2
     if (space == 9) {
-      text(space_1 + space_2 + space_10 + space_17 + space_18, 40, 110);
+      text(space_1 + space_2 + space_10 + space_17 + space_18, 20, 130);
     }
     if (space == 10) {
-      text(space_1 + space_2 + space_3 + space_9 + space_11 + space_17 + space_18 + space_19, 90, 110);
+      text(space_1 + space_2 + space_3 + space_9 + space_11 + space_17 + space_18 + space_19, 70, 130);
     }
     if (space == 11) {
-      text(space_2 + space_3 + space_4 + space_12 + space_10 + space_18 + space_19 + space_20, 140, 110);
+      text(space_2 + space_3 + space_4 + space_12 + space_10 + space_18 + space_19 + space_20, 120, 130);
     }
     if (space == 12) {
-      text(space_3 + space_4 + space_5 + space_11 + space_13 + space_19 + space_20 + space_21, 190, 110);
+      text(space_3 + space_4 + space_5 + space_11 + space_13 + space_19 + space_20 + space_21, 170, 130);
     }
     if (space == 13) {
-      text(space_4+space_5+space_6+space_12+space_14+space_20+space_21+space_22, 240, 110);
+      text(space_4+space_5+space_6+space_12+space_14+space_20+space_21+space_22, 220, 130);
     }
     if (space == 14) {
-      text(space_5+space_6+space_7+space_13+space_15+space_21+space_22+space_23, 290, 110);
+      text(space_5+space_6+space_7+space_13+space_15+space_21+space_22+space_23, 270, 130);
     }
     if (space == 15) {
-      text(space_6+space_7+space_8+space_14+space_16+space_22+space_23+space_24, 340, 110);
+      text(space_6+space_7+space_8+space_14+space_16+space_22+space_23+space_24, 320, 130);
     }
     if (space == 16) {
-      text(space_7+space_8+space_15+space_23+space_24, 390, 110);
+      text(space_7+space_8+space_15+space_23+space_24, 370, 130);
     }
+    //////////////////////////////////////////////////////////////////// ROW 3
     if (space == 17) {
-      text(space_9+space_10+space_18+space_25+space_26, 40, 160);
+      text(space_9+space_10+space_18+space_25+space_26, 20, 180);
     }
     if (space == 18) {
-      text(space_9+space_10+space_11+space_17+space_19+space_25+space_26+space_27, 90, 160);
+      text(space_9+space_10+space_11+space_17+space_19+space_25+space_26+space_27, 70, 180);
     }
     if (space == 19) {
-      text(space_10+space_11+space_12+space_18+space_20+space_26+space_27+space_28, 140, 160);
+      text(space_10+space_11+space_12+space_18+space_20+space_26+space_27+space_28, 120, 180);
     }
     if (space == 20) {
-      text(space_11+space_12+space_13+space_19+space_21+space_27+space_28+space_29, 190, 160);
+      text(space_11+space_12+space_13+space_19+space_21+space_27+space_28+space_29, 170, 180);
     }
     if (space == 21) {
-      text(space_12+space_13+space_14+space_20+space_22+space_28+space_29+space_30, 240, 160);
+      text(space_12+space_13+space_14+space_20+space_22+space_28+space_29+space_30, 220, 180);
     }
     if (space == 22) {
-      text(space_13+space_14+space_15+space_21+space_23+space_29+space_30+space_31, 290, 160);
+      text(space_13+space_14+space_15+space_21+space_23+space_29+space_30+space_31, 270, 180);
     }
     if (space == 23) {
-      text(space_14+space_15+space_16+space_22+space_24+space_30+space_31+space_32, 340, 160);
+      text(space_14+space_15+space_16+space_22+space_24+space_30+space_31+space_32, 320, 180);
     }
     if (space == 24) {
-      text(space_15+space_16+space_23+space_31+space_32, 390, 160);
+      text(space_15+space_16+space_23+space_31+space_32, 370, 180);
     }
+    //////////////////////////////////////////////////////////////////// ROW 4
     if (space == 25) {
-      text(space_17+space_18+space_26+space_33+space_34, 40, 210);
+      text(space_17+space_18+space_26+space_33+space_34, 20, 230);
     }
     if (space == 26) {
-      text(space_17+space_18+space_19+space_25+space_27+space_33+space_34+space_35, 90, 210);
+      text(space_17+space_18+space_19+space_25+space_27+space_33+space_34+space_35, 70, 230);
     }
     if (space == 27) {
-      text(space_18+space_19+space_20+space_26+space_28+space_34+space_35+space_36, 140, 210);
+      text(space_18+space_19+space_20+space_26+space_28+space_34+space_35+space_36, 120, 230);
     }
     if (space == 28) {
-      text(space_19+space_20+space_21+space_27+space_29+space_35+space_36+space_37, 190, 210);
+      text(space_19+space_20+space_21+space_27+space_29+space_35+space_36+space_37, 170, 230);
     }
     if (space == 29) {
-      text(space_20+space_21+space_22+space_28+space_30+space_36+space_37+space_38, 240, 210);
+      text(space_20+space_21+space_22+space_28+space_30+space_36+space_37+space_38, 220, 230);
     }
     if (space == 30) {
-      text(space_21+space_22+space_23+space_29+space_31+space_37+space_38+space_39, 290, 210);
+      text(space_21+space_22+space_23+space_29+space_31+space_37+space_38+space_39, 270, 230);
     }
     if (space == 31) {
-      text(space_22+space_23+space_24+space_30+space_32+space_38+space_39+space_40, 340, 210);
+      text(space_22+space_23+space_24+space_30+space_32+space_38+space_39+space_40, 320, 230);
     }
     if (space == 32) {
-      text(space_23+space_24+space_31+space_39+space_40, 390, 210);
+      text(space_23+space_24+space_31+space_39+space_40, 370, 230);
     }
+    //////////////////////////////////////////////////////////////////// ROW 5
     if (space == 33) {
-      text(space_25+space_26+space_34+space_41+space_42, 40, 260);
+      text(space_25+space_26+space_34+space_41+space_42, 20, 280);
     }
     if (space == 34) {
-      text(space_25+space_26+space_27+space_33+space_35+space_41+space_42+space_43, 90, 260);
+      text(space_25+space_26+space_27+space_33+space_35+space_41+space_42+space_43, 70, 280);
     }
     if (space == 35) {
-      text(space_26+space_27+space_28+space_34+space_36+space_42+space_43+space_44, 140, 260);
+      text(space_26+space_27+space_28+space_34+space_36+space_42+space_43+space_44, 120, 280);
     }
     if (space == 36) {
-      text(space_27+space_28+space_29+space_35+space_37+space_43+space_44+space_45, 190, 260);
+      text(space_27+space_28+space_29+space_35+space_37+space_43+space_44+space_45, 170, 280);
     }
     if (space == 37) {
-      text(space_28+space_29+space_30+space_36+space_38+space_44+space_45+space_46, 240, 260);
+      text(space_28+space_29+space_30+space_36+space_38+space_44+space_45+space_46, 220, 280);
     }
     if (space == 38) {
-      text(space_29+space_30+space_31+space_37+space_39+space_45+space_46+space_47, 290, 260);
+      text(space_29+space_30+space_31+space_37+space_39+space_45+space_46+space_47, 270, 280);
     }
     if (space == 39) {
-      text(space_30+space_31+space_32+space_38+space_40+space_46+space_47+space_48, 340, 260);
+      text(space_30+space_31+space_32+space_38+space_40+space_46+space_47+space_48, 320, 280);
     }
     if (space == 40) {
-      text(space_31+space_32+space_39+space_47+space_48, 390, 260);
+      text(space_31+space_32+space_39+space_47+space_48, 370, 280);
     }
+    //////////////////////////////////////////////////////////////////// ROW 6
     if (space == 41) {
-      text(space_33+space_34+space_42+space_49+space_50, 40, 310);
+      text(space_33+space_34+space_42+space_49+space_50, 20, 330);
     }
     if (space == 42) {
-      text(space_33+space_34+space_35+space_41+space_43+space_49+space_50+space_51, 90, 310);
+      text(space_33+space_34+space_35+space_41+space_43+space_49+space_50+space_51, 70, 330);
     }
     if (space == 43) {
-      text(space_34+space_35+space_36+space_42+space_44+space_50+space_51+space_52, 140, 310);
+      text(space_34+space_35+space_36+space_42+space_44+space_50+space_51+space_52, 120, 330);
     }
     if (space == 44) {
-      text(space_35+space_36+space_37+space_43+space_45+space_51+space_52+space_53, 190, 310);
+      text(space_35+space_36+space_37+space_43+space_45+space_51+space_52+space_53, 170, 330);
     }
     if (space == 45) {
-      text(space_36+space_37+space_38+space_44+space_46+space_52+space_53+space_54, 240, 310);
+      text(space_36+space_37+space_38+space_44+space_46+space_52+space_53+space_54, 220, 330);
     }
     if (space == 46) {
-      text(space_37+space_38+space_39+space_45+space_47+space_53+space_54+space_55, 290, 310);
+      text(space_37+space_38+space_39+space_45+space_47+space_53+space_54+space_55, 270, 330);
     }
     if (space == 47) {
-      text(space_38+space_39+space_40+space_46+space_48+space_54+space_55+space_56, 340, 310);
+      text(space_38+space_39+space_40+space_46+space_48+space_54+space_55+space_56, 320, 330);
     }
     if (space == 48) {
-      text(space_39+space_40+space_47+space_55+space_56, 390, 310);
+      text(space_39+space_40+space_47+space_55+space_56, 370, 330);
     }
+    //////////////////////////////////////////////////////////////////// ROW 7
     if (space == 49) {
-      text(space_41+space_42+space_50, 40, 360);
+      text(space_41+space_42+space_50, 20, 380);
     }
     if (space == 50) {
-      text(space_41+space_42+space_43+space_49+space_51, 90, 360);
+      text(space_41+space_42+space_43+space_49+space_51, 70, 380);
     }
     if (space == 51) {
-      text(space_42+space_43+space_44+space_50+space_52, 140, 360);
+      text(space_42+space_43+space_44+space_50+space_52, 120, 380);
     }
     if (space == 52) {
-      text(space_43+space_44+space_45+space_51+space_53, 190, 360);
+      text(space_43+space_44+space_45+space_51+space_53, 170, 380);
     }
     if (space == 53) {
-      text(space_44+space_45+space_46+space_52+space_54, 240, 360);
+      text(space_44+space_45+space_46+space_52+space_54, 220, 380);
     }
     if (space == 54) {
-      text(space_45+space_46+space_47+space_53+space_55, 290, 360);
+      text(space_45+space_46+space_47+space_53+space_55, 270, 380);
     }
     if (space == 55) {
-      text(space_46+space_47+space_48+space_54+space_56, 340, 360);
+      text(space_46+space_47+space_48+space_54+space_56, 320, 380);
     }
     if (space == 56) {
-      text(space_47+space_48+space_55, 390, 360);
+      text(space_47+space_48+space_55, 370, 380);
     }
   }
 }
 
+
+
+ /////////FROM GoToLoop from the processing forum////////////
 void mouseMoved() {
   color c = get(mouseX, mouseY);
 
   color r = c >> 020 & 0xFF;
   println( "\tR: " + r);
 }
+ ///ISSUE :[pixel??] colour recognition of mouse position////
