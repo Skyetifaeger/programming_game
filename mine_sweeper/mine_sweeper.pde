@@ -66,7 +66,7 @@ int space_53 = 2;
 int space_54 = 2;
 int space_55 = 2;
 int space_56 = 2;
-int dificulty = 0;
+int difficulty = 6;
 
 void setup () {
   size(400, 400);
@@ -95,292 +95,292 @@ void setup () {
   numbers();
   choose();
   textSize(20);
-  fill(255,10,10);
+  fill(255, 10, 10);
   text("You can select squares through flags", 70, 25);
 }
 
 void choose () {
-  if (int(int(random(1, 5))) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_1 = 1;
   } else {
     space_1 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_2 = 1;
   } else {
     space_2 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_3 = 1;
   } else {
     space_3 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_4 = 1;
   } else {
     space_4 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_5 = 1;
   } else {
     space_5 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_6 = 1;
   } else {
     space_6 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_7 = 1;
   } else {
     space_7 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_8 = 1;
   } else {
     space_8 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_9 = 1;
   } else {
     space_9 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_10 = 1;
   } else {
     space_10 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_11 = 1;
   } else {
     space_11 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_12 = 1;
   } else {
     space_12 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_13 = 1;
   } else {
     space_13 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_14 = 1;
   } else {
     space_14 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_15 = 1;
   } else {
     space_15 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_16 = 1;
   } else {
     space_16 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_17 = 1;
   } else {
     space_17 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_18 = 1;
   } else {
     space_18 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_19 = 1;
   } else {
     space_19 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_20 = 1;
   } else {
     space_20 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_21 = 1;
   } else {
     space_21 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_22 = 1;
   } else {
     space_22 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_23 = 1;
   } else {
     space_23 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_24 = 1;
   } else {
     space_24 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_25 = 1;
   } else {
     space_25 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_26 = 1;
   } else {
     space_26 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_27 = 1;
   } else {
     space_27 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_28 = 1;
   } else {
     space_28 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_29 = 1;
   } else {
     space_29 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_30 = 1;
   } else {
     space_30 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_31 = 1;
   } else {
     space_31 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_32 = 1;
   } else {
     space_32 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_33 = 1;
   } else {
     space_33 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_34 = 1;
   } else {
     space_34 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_35 = 1;
   } else {
     space_35 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_36 = 1;
   } else {
     space_36 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_37 = 1;
   } else {
     space_37 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_38 = 1;
   } else {
     space_38 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_39 = 1;
   } else {
     space_39 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_40 = 1;
   } else {
     space_40 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_40 = 1;
   } else {
     space_40 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_41 = 1;
   } else {
     space_41 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_42 = 1;
   } else {
     space_42 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_43 = 1;
   } else {
     space_43 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_44 = 1;
   } else {
     space_44 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_45 = 1;
   } else {
     space_45 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_46 = 1;
   } else {
     space_46 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_47 = 1;
   } else {
     space_47 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_48 = 1;
   } else {
     space_48 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_49 = 1;
   } else {
     space_49 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_50 = 1;
   } else {
     space_50 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_51 = 1;
   } else {
     space_51 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_52 = 1;
   } else {
     space_52 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_53 = 1;
   } else {
     space_53 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_54 = 1;
   } else {
     space_54 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_55 = 1;
   } else {
     space_55 = 0;
   }
-  if (int(random(1, 5)) == 1) {
+  if (int(random(1, difficulty)) == 1) {
     space_56 = 1;
   } else {
     space_56 = 0;
@@ -642,6 +642,7 @@ void find_space () {
     }
     if (row == 2 && column == 3) {
       space = 11;
+
       near = true;
       if (space_11 == 1) {
         near = false;
