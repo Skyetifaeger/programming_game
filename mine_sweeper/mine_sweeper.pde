@@ -1290,14 +1290,3 @@ void find_space () {
     }
   }
 }
-
-
-
-///////////FROM GoToLoop from the processing forum////////////
-//void mouseMoved() {
-//  color c = get(mouseX, mouseY);
-
-//  color r = c >> 020 & 0xFF;
-//  println( "\tR: " + r);
-//}
-/////ISSUE :[pixel??] colour recognition of mouse position////
