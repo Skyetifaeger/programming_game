@@ -96,7 +96,7 @@ void setup () {
   choose();
   textSize(20);
   fill(255, 10, 10);
-  text("You can select squares through flags", 70, 25);
+  text("No winning message", 70, 25);
 }
 
 void choose () {
