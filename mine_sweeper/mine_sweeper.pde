@@ -96,7 +96,8 @@ void setup () {
   choose();
   textSize(20);
   fill(255, 10, 10);
-  text("No winning message", 70, 25);
+  text("•There is no winning message", 70, 25);
+  text("•The red square is a flag", 70, 45);
 }
 
 void choose () {
@@ -441,7 +442,7 @@ void draw () {
       row = 0;
       column = 0;
       if (mouseX <= 45 && mouseX >= 5 && mouseY >= 5 && mouseY <= 45) {
-        delay(70);
+        delay(90);
         if (flag_mode == true) {
           stroke(255);
           fill(#CF4647);
@@ -531,7 +532,7 @@ void draw () {
 
 void find_space () {
   mouseMoved();
-  if (flag_mode == true) {
+  if (flag_mode == true && mouseY > 40) {
     Xpos = column*50 - 40;
     Ypos = row*50 + 10;
     noStroke();
